@@ -5,8 +5,8 @@ public class Main {
         // カードを１組（52枚）作成
         Card[] cards = new Card[52];
         String[] marks = {"スペード", "ハート", "ダイヤ", "クラブ"};
-        for (int i=0; i<4;i++) {
-            for (int j=0;j<13;j++) {
+        for (int i=0 ; i<4 ; i++) {
+            for (int j=0 ; j<13 ; j++) {
                 Card card = new Card(marks[i], j+1);
                 cards[i*13+j] = card;
             }
