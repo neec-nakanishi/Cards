@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+        // カードを１組（52枚）作成
         Card[] cards = new Card[52];
         String[] marks = {"スペード", "ハート", "ダイヤ", "クラブ"};
         for (int i=0; i<4;i++) {
@@ -11,8 +12,10 @@ public class Main {
             }
         }
 
+        // カードをシャッフルする
         Main.shuffle(cards);
 
+        // カードを表示する
         for (int i=0; i<cards.length;i++) {
             System.out.println(cards[i].mark + cards[i].number);
         }
