@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // カードを１組（52枚）作成
         Card[] cards = new Card[52];
-        String[] marks = {"♠︎", "❤︎", "♦️", "♣︎"};
+        String[] marks = {"♠︎", "❤️", "♦️", "♣︎"};
         for (int i=0 ; i<4 ; i++) {
             for (int j=0 ; j<13 ; j++) {
                 Card card = new Card(marks[i], j+1);
